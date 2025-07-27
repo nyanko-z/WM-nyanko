@@ -16,8 +16,8 @@
             left: 0;
             z-index: 1000;
             position: fixed;
-            width:100%;
-            height:500px;
+            width: 100%;
+            height: 500px;
         }
         #back{
             top: 0;
@@ -33,7 +33,7 @@
             position: fixed;
             background-color: rgba(128,128,128,0.5);
             font-size: 50px;
-            padding: 20px,20px;
+            padding: 20px;
             color: white;
             border: none;
             border-radius: 15px;
@@ -41,15 +41,19 @@
     </style>
 </head>
 <body>
-<button id="indexbtn">×</button>
-<img src="InShot_20250727_102014316.jpg" id="indeximg">
-<div id="back"></div>
+    <div id="flag"></div>
     <script>
-        alert("サイト内の画像は著作物なので、無断コピー、インターネットへのアップロードを固く禁じます。　ヨロシクネー")
+    const flag=document.getElementById("flag");
+    if (!localStorage.getItem("imagedisplay")){
+        alert("サイト内の画像は著作物なので、無断コピー、インターネットへのアップロードを固く禁じます。　ヨロシクネー");
+        const html=`<button id="indexbtn">×</button>
+<img src="InShot_20250727_102014316.jpg" id="indeximg">
+<div id="back"></div>`;
+        flag.innerHTML=html;
+        localStorage.setItem("imagedisplay","true");
         document.getElementById("indexbtn").addEventListener("click",()=>{document.getElementById("indexbtn").style.display="none";
-                                                                          document.getElementById("indeximg").style.display="none";
-                                                                         document.getElementById("back").style.display="none";
-                                                                         });
+                                                                          document.getElementById("indeximg").style.display="none";                                                                   document.getElementById("back").style.display="none";
+    })};
     </script>
         <div class="block1">
         <img src="InShot_20250713_184646067.png" width="200" height="60" class="texttop1">
@@ -66,6 +70,6 @@
         <p>となり村に着いたタケルは、謎の敵と出くわす。タケルはやられそうになるが…</p>
         <img src="無題364_20250713175817.png" style="max-width: 100%; height: auto;">  
 　　<div class="line1"></div>
-<p style="font-size: 8px;">前回作ったサイトはcrayonというサイト作成アプリを使用していたのですが、今回はhtmlコードでイチから作っていますので前回よりクオリティーが落ちてます（笑）
+<p style="font-size: 8px;">前回作ったサイトはcrayonというサイト作成アプリを使用していたのですが、今回はhtmlコードでイチから作っていますので前回よりクオリティーが落ちてます（笑）</p>
 </body>
 </html>
