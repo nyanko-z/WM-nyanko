@@ -11,12 +11,27 @@
         .line1 { border-bottom: 2px solid #7D7D7D; margin-top: 30px; }
         .goleft1 { margin-left: 10px; }
         .imgsize1 { max-width: 100%; height: auto; }
+        #indeximg{
+            z-index: 1000;
+            position: fixed;
+        }
+        #indexbtn{
+            z-index: 1001;
+            position: fixed;
+            background-color: red;
+            font-size: 20px;
+            padding: 20px;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <script>
         alert("サイト内の画像は著作物なので、無断コピー、インターネットへのアップロードを固く禁じます。　ヨロシクネー")
-    </script>
+        document.getElementById("indexbtn").addEventListener("click",()=>{document.getElementById("indexbtn").style.display="none";
+                                                                          document.getElementById("indeximg").style.display="none";});
+}
+            </script>
         <div class="block1">
         <img src="InShot_20250713_184646067.png" width="200" height="60" class="texttop1">
         <img src="無題367_20250713194658.png" width="80" height="70">
