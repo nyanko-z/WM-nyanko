@@ -16,6 +16,7 @@
             position: fixed;
             width:100%;
             height:200px;
+            margin-right: 100px;
         }
         #indexbtn{
             z-index: 1001;
@@ -28,13 +29,12 @@
     </style>
 </head>
 <body>
-<button id="indexbtn">×<button>
+<button id="indexbtn">×</button>
 <img src="InShot_20250727_102014316.jpg" id="indeximg">
     <script>
         alert("サイト内の画像は著作物なので、無断コピー、インターネットへのアップロードを固く禁じます。　ヨロシクネー")
         document.getElementById("indexbtn").addEventListener("click",()=>{document.getElementById("indexbtn").style.display="none";
                                                                           document.getElementById("indeximg").style.display="none";});
-}
     </script>
         <div class="block1">
         <img src="InShot_20250713_184646067.png" width="200" height="60" class="texttop1">
