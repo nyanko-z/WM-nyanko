@@ -38,29 +38,25 @@
             border: none;
             border-radius: 15px;
         }
+        #noimage{
+            background-color: gray;
+            color: white;
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <div id="flag"></div>
-    <script>
-    const flag=document.getElementById("flag");
-    if (!localStorage.getItem("imagedisplay")){
-        alert("サイト内の画像は著作物なので、無断コピー、インターネットへのアップロードを固く禁じます。　ヨロシクネー");
-        const html=`<button id="indexbtn">×</button>
-<img src="InShot_20250727_102014316.jpg" id="indeximg">
-<div id="back"></div>`;
-        flag.innerHTML=html;
-        localStorage.setItem("imagedisplay","true");
-        document.getElementById("indexbtn").addEventListener("click",()=>{document.getElementById("indexbtn").style.display="none";
-                                                                          document.getElementById("indeximg").style.display="none";                                                                   document.getElementById("back").style.display="none";
-    })};
-    </script>
         <div class="block1">
         <img src="InShot_20250713_184646067.png" width="200" height="60" class="texttop1">
         <img src="無題367_20250713194658.png" width="80" height="70">
     </div>
 <!--ここから情報-------------------------------------------------------->
 <div class="line1"></div>
+    <h2>勇者タケルの大冒険　第五階カード取得勇者試験編　第一章を公開しました。</h2>
+<p>長いので章で分けることにしました。「ピコル」という人が登場します。</p>
+    <div id="noimage">noimage</div>
+    <div class="line1"></div>
     <h2>勇者タケルの大冒険！！第五階カード取得勇者試験編　お話の内容考え中・・・</h2>
     <p>今回は魔法を持った人をたくさん出したいと思っています。</p>
         <img src="InShot_20250728_085402600.jpg" class="imgsize1">
