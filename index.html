@@ -82,6 +82,18 @@
     </style>
 </head>
 <body>
+      <div id="flag"></div>
+    <script>
+    const flag=document.getElementById("flag");
+    if (!localStorage.getItem("display")){
+        alert("サイト内の画像は著作物なので、無断コピー、インターネットへのアップロードを固く禁じます。　ヨロシクネー");
+        const html=`<button id="indexbtn">×</button>
+<img src="InShot_20250829_120247958.jpg" id="indeximg">
+<div id="back"></div>`;
+        flag.innerHTML=html;
+        localStorage.setItem("display","true");
+        document.getElementById("indexbtn").addEventListener("click",()=>{document.getElementById("indexbtn").style.display="none";
+                                                   
   <button id="indexbtn">
     <img src="InShot_20250829_120247958.jpg" id="indeximg">
     <div id="back">
